@@ -275,3 +275,4 @@ D:\Project\2023\learn.microsoft.com\TodoApi\obj\Debug\net7.0\refint\TodoApi.dll
 D:\Project\2023\learn.microsoft.com\TodoApi\obj\Debug\net7.0\TodoApi.pdb
 D:\Project\2023\learn.microsoft.com\TodoApi\obj\Debug\net7.0\TodoApi.genruntimeconfig.cache
 D:\Project\2023\learn.microsoft.com\TodoApi\obj\Debug\net7.0\ref\TodoApi.dll
+D:\Project\2023\learn.microsoft.com\TodoApi\bin\Debug\net7.0\TodoApi.staticwebassets.runtime.json
