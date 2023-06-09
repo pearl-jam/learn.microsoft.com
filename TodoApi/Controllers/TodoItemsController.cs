@@ -25,7 +25,7 @@ namespace TodoApi.Controllers
 
         // GET: api/TodoItems
         [HttpGet]
-        public async Task<ActionResult<IEnumerable<TodoItemDTO>>> GetTodoItems()
+        public async Task<ActionResult<IEnumerable<TodoItemDto>>> GetTodoItems()
         {
             if (_context.TodoItems == null)
             {
@@ -37,7 +37,7 @@ namespace TodoApi.Controllers
 
         // GET: api/TodoItems/5
         [HttpGet("{id}")]
-        public async Task<ActionResult<TodoItemDTO>> GetTodoItem(long id)
+        public async Task<ActionResult<TodoItemDto>> GetTodoItem(long id)
         {
             if (_context.TodoItems == null)
             {
@@ -57,7 +57,7 @@ namespace TodoApi.Controllers
         // PUT: api/TodoItems/5
         // To protect from overposting attacks, see https://go.microsoft.com/fwlink/?linkid=2123754
         [HttpPut("{id}")]
-        public async Task<IActionResult> PutTodoItem(long id, TodoItemDTO todoItem)
+        public async Task<IActionResult> PutTodoItem(long id, TodoItemDto todoItem)
         {
             if (id != todoItem.Id)
             {
@@ -88,7 +88,7 @@ namespace TodoApi.Controllers
         // POST: api/TodoItems
         // To protect from overposting attacks, see https://go.microsoft.com/fwlink/?linkid=2123754
         [HttpPost]
-        public async Task<ActionResult<TodoItemDTO>> PostTodoItem(TodoItemDTO todoDTO)
+        public async Task<ActionResult<TodoItemDto>> PostTodoItem(TodoItemDto todoDTO)
         {
             // 기본 생성 코드 주석 처리
             //if (_context.TodoItems == null)
@@ -137,8 +137,8 @@ namespace TodoApi.Controllers
             return (_context.TodoItems?.Any(e => e.Id == id)).GetValueOrDefault();
         }
 
-        private static TodoItemDTO ItemToDTO(TodoItem todoItem) =>
-            new TodoItemDTO
+        private static TodoItemDto ItemToDTO(TodoItem todoItem) =>
+            new TodoItemDto
             {
                 Id = todoItem.Id,
                 Name = todoItem.Name,

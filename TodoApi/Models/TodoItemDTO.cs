@@ -13,7 +13,7 @@
     /// - 페이로드 크기를 줄이기 위해 일부 속성을 생략합니다.
     /// - 중첩된 개체를 포함하는 개체 그래프를 평면화합니다. 클라이언트에는 평면화된 개체 그래프가 더 편리할 수 있습니다.
     /// </summary>
-    public class TodoItemDTO
+    public class TodoItemDto
     {
         public long Id { get; set; }
 
